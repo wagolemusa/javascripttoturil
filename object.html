@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+
+		<script type="text/JavaScript" language="JavaScript">
+
+			 function house (length,width){
+
+			this.length = length;
+			this.width  = width;
+
+
+			// it calculates area
+			this.area 	= function(){
+				return this.length * this.width;
+			}
+
+			// it calculates the perimater
+			this.perimeter = function(){
+				return  (this.length + this.width);
+			}
+
+			// it collects all the infomatons
+			this.info = function(){
+
+				return "length = "+this.length+"<br/> <br/>width = "+this.width+"<br/><br/> Area = "+this.area()+"<br/> <br/> perimeter"+this.perimeter();
+			}
+		};
+
+
+
+		var myHouse = new house(5, 5);
+		var urHouse = new house(78,25);
+
+
+		//var vinay = new person('refuge wise', 22, 'Uganda', 'Coder');
+
+		document.write(urHouse.info());
+		//document.write(vinay.birthyear());
+		
+
+		</script>
+
+
+</body>
+</html>
